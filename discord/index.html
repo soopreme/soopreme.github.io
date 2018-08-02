@@ -1,0 +1,42 @@
+<!--!DOCTYPE html -->
+<html lang="en">
+  <head>
+  <title>Soopreme Dev Team</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <link rel="stylesheet" href="assets/css/equinox.css">
+</head>
+  <body>
+    <!-- Modify this according to your requirement -->
+    <img class="icon rounded" style="margin-top: 100px; margin-left: 100px; margin-right:100px; max-height: 1000px; max-width: 1000px;" src="https://cdn.glitch.com/e450edfa-cfb1-498f-8276-78abe5915aab%2Fsoopreme.png?1533205556881" />
+    <div class="alert alert-warning" role="alert" style=" margin-left: 100px; margin-right:100px;">Redirecting you to the discord after <span id="countdown">5</span> seconds</div>
+
+<!-- JavaScript part -->
+<script type="text/javascript">
+    
+    // Total seconds to wait
+    var seconds = 5;
+    
+    function countdown() {
+        seconds = seconds - 1;
+        if (seconds < 0) {
+            // Chnage your redirection link here
+            window.location = "https://discord.gg/Y4VCUAA";
+        } else {
+            // Update remaining seconds
+            document.getElementById("countdown").innerHTML = seconds;
+            // Count down using javascript
+            window.setTimeout("countdown()", 1000);
+        }
+    }
+    
+    // Run countdown function
+    countdown();
+    
+</script>
+  </body>
+</html>
